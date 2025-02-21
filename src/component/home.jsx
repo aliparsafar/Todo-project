@@ -53,8 +53,8 @@ const Home = () => {
 
 
   return items ? (
-    <div>
-        <h1>toDo<span>List</span></h1>
+    <div className="flex flex-col">
+        <h1 className="text-4xl font-bold pb-10">toDo<span className="text-emerald-700">List</span></h1>
         <Add items={items} setItems={setItems} />
         <Items items={items} deleteHandler={deleteHandler} editHandler={editHandler} textEdit={textEdit} setTextEdit={setTextEdit} isEdit={isEdit} setIsEdit={setIsEdit} checkHandler={checkHandler} />
     </div>

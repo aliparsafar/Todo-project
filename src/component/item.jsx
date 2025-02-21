@@ -5,7 +5,7 @@ const Item = ({id, todo, completed, deleteHandler, editHandler, textEdit, setTex
  
     
   return (
-    <div className="flex w-130 h-22 bg-blue-200 rounded-2xl items-center px-5 gap-3 justify-between">
+    <div className="flex w-130 h-22 bg-emerald-700 rounded-2xl items-center px-5 gap-3 justify-between">
         <input type="checkbox" name="" id="" checked={completed} onChange={() => checkHandler(id)} />
         {
             isEdit === id ?
